@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Index Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .navbar {
+            height: 70px;
+            background-color: #131842;
+            color: white;
+            position: relative;
+            top: -22px;
+
+        }
+
+        ul li {
+            float: right;
+            display: inline-block;
+        }
+
+        ul li a {
+            color: white;
+            padding: 0px 50px;
+            text-decoration: none;
+            position: relative;
+            top: -20px;
+            transition-property: border-bottom;
+            transition-duration: 30ms;
+            transition-timing-function: linear;
+
+        }
+
+        a:hover {
+            border-bottom: 5px solid #E68369;
+            color: #E68369;
+            font-size: large;
+        }
+
+        .heading {
+            background-color: #131842;
+            padding: 0px 10px;
+            display: inline;
+            position: relative;
+            top: 26px;
+            border-radius: 5px;
+        }
+
+        .set {
+            border: 1px solid lightgray;
+            height: 300px;
+            width: 20%;
+            padding: 30px 50px;
+            background: rgba(98, 110, 89, 0.2);
+            border-radius: 20px;
+            box-shadow: 0px 0px 5px grey;
+            display: inline-block;
+            position: relative;
+            left: 100px;
+            top: 50px;
+        }
+
+        .img {
+            height: 350px;
+            border: 1px solid #131842;
+            border-radius: 5px;
+            width: 60%;
+            display: inline-block;
+            box-shadow: 0px 0px 5px 8px #131842;
+            position: absolute;
+            left: 500px;
+            top: 125px;
+            animation-name: ANI;
+            animation-duration: 5S;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+
+        }
+
+        @keyframes ANI {
+            0% {
+                background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTApIZMGxebwebZAy0v4Sj-WiMJPMfEKqdixA&s');
+                background-size: 100% 100%;
+
+            }
+
+            33% {
+                background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGM9iwoDdSS3xivJ9bn3gutHA7fgJmIlU5cQ&s');
+                background-size: 100% 100%;
+            }
+
+            66% {
+                background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyQoVu49yCvisD_sK3OemOH6731vW5jEiA8g&s');
+                background-size: 100% 100%;
+            }
+
+            100% {
+                background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4jqVJbQRQEKsQSd45OItRwsADzvo39cPdPw&s');
+                background-size: 100% 100%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="navbar">
+        <h1 class="heading">Online Examination</h1>
+        <ul>
+
+            <li><a href=""><i class="fa-solid fa-circle-info"></i> ABOUT</a></li>
+            <li><a href=""><i class="fa-regular fa-address-book"></i> CONTACT</a></li>
+            <li><a href="reg.html"><i class="fa-regular fa-address-card"></i> REGISTRATION</a></li>
+            <li><a href="login.html"><i class="fa-solid fa-right-to-bracket"></i> LOGIN</a></li>
+            <li><a href="index.html"><i class="fa-solid fa-house-user"> </i> HOME</a></li>
+        </ul>
+    </div>
+    <div class="set">
+
+
+    </div>
+    <div class="img"></div>
+
+</body>
+
+</html>

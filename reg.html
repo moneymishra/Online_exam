@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Index Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .navbar {
+            height: 70px;
+            background-color: #131842;
+            color: white;
+            position: relative;
+            top: -22px;
+
+        }
+
+        ul li {
+            float: right;
+            display: inline-block;
+        }
+
+        ul li a {
+            color: white;
+            padding: 0px 50px;
+            text-decoration: none;
+            position: relative;
+            top: -20px;
+            transition-property: border-bottom;
+            transition-duration: 30ms;
+            transition-timing-function: linear;
+
+        }
+
+        a:hover {
+            border-bottom: 5px solid #E68369;
+            color: #E68369;
+            font-size: large;
+        }
+
+        .heading {
+            background-color: #131842;
+            padding: 0px 10px;
+            display: inline;
+            position: relative;
+            top: 26px;
+            border-radius: 5px;
+        }
+
+        .reg_form {
+            width: 35%;
+            border: 5px solid #E68369;
+            border-radius: 8px;
+            text-align: center;
+            padding: 15px;
+            background-color: #ECCEAE;
+            margin-left: 450px;
+            margin-top: 40px;
+
+            /*
+#FBF6E2
+#ECCEAE
+#131842
+#E68369
+
+*/
+        }
+
+        input {
+            margin-bottom: 20px;
+        }
+    </style>
+
+<body>
+    <div class="navbar">
+        <h1 class="heading">Online Examination</h1>
+        <ul>
+
+            <li><a href=""><i class="fa-solid fa-circle-info"></i> ABOUT</a></li>
+            <li><a href=""><i class="fa-regular fa-address-book"></i> CONTACT</a></li>
+            <li><a href="reg.html"><i class="fa-regular fa-address-card"></i> REGISTRATION</a></li>
+            <li><a href="login.html"><i class="fa-solid fa-right-to-bracket"></i> LOGIN</a></li>
+            <li><a href="index.html"><i class="fa-solid fa-house-user"> </i> HOME</a></li>
+        </ul>
+    </div>
+    <div class="reg_form">
+        <h1 style="text-decoration: underline;">USER REGISTRATION</h1>
+        <form>
+            <input type="text" placeholder="Enter Your Name">
+            <br>
+            <input type="email" placeholder="Enter Your Email">
+            <br>
+            <input type="password" placeholder="Enter Your Password">
+            <br>
+            Select you Gender
+            Male <input type="radio" name="gen">
+            Female<input type="radio" name="gen">
+            Others<input type="radio" name="gen">
+            <br>
+            <input type="tel" placeholder="Enter Your Phone Number">
+            <br>
+            Select Your Course
+            <select>
+                <option></option>
+                <option>BCA</option>
+                <option>BCOM</option>
+                <option>BTech</option>
+            </select>
+            <br>
+            <input type="text" placeholder="Enter Your City">
+            <br>
+            <input type="number" placeholder="Enter Your pin">
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>
